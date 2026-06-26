@@ -1,0 +1,133 @@
+/* BT Inženiring — interactive animations, cursor, reveal, parallax, spotlight */
+
+/* ==========================================
+   Interactive / Animation Additions
+========================================== */
+
+/* ---- Custom Cursor ---- */
+@media (pointer: fine) {
+  body, a, button { cursor: none; }
+}
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--blue);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  left: 0; top: 0;
+  transform: translate(-50%, -50%);
+  will-change: left, top;
+  transition: width .2s ease, height .2s ease, background .2s ease;
+}
+.cursor-ring {
+  position: fixed;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(0,51,231,.45);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  left: 0; top: 0;
+  transform: translate(-50%, -50%);
+  will-change: left, top;
+  transition: width .3s ease, height .3s ease, border-color .3s ease, background .3s ease;
+}
+.cursor-dot.cursor--hover  { width: 12px; height: 12px; background: var(--blue-dark); }
+.cursor-ring.cursor--hover { width: 56px; height: 56px; border-color: var(--blue); background: rgba(0,51,231,.06); }
+
+/* ---- Word-by-word reveal ---- */
+.wr-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  line-height: inherit;
+}
+.wr-inner {
+  display: inline-block;
+  transform: translateY(110%) rotateX(-70deg);
+  transform-origin: top center;
+  opacity: 0;
+  transition: transform .65s cubic-bezier(.16,1,.3,1), opacity .5s ease;
+}
+.wr-word.active .wr-inner {
+  transform: none;
+  opacity: 1;
+}
+
+/* ---- Enhanced 3D reveal ---- */
+.reveal {
+  opacity: 0;
+  transform: perspective(1000px) translateY(40px) rotateX(10deg);
+  transform-origin: top center;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.16,1,.3,1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: perspective(1000px) translateY(0) rotateX(0);
+}
+
+
+/* ---- Logo strip — pause on hover ---- */
+.logo-strip:hover .logo-track { animation-play-state: paused; }
+
+/* ---- About photo will-change ---- */
+.about-photo { will-change: transform; }
+
+/* ---- Scroll Progress Bar ---- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(to right, var(--blue), #7aaaff);
+  z-index: 9999;
+  pointer-events: none;
+  transition: width .08s linear;
+}
+
+/* ---- Nav backdrop blur ---- */
+.nav.scrolled {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255,255,255,.9);
+}
+
+/* ---- Hero parallax performance ---- */
+.hero__bg {
+  will-change: transform;
+}
+
+/* ---- Hero overlay transition for mouse glow ---- */
+.hero__overlay {
+  transition: background .25s ease;
+}
+
+/* ---- Service card spotlight glow ---- */
+.svc-card {
+  will-change: transform;
+}
+.svc-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  background: radial-gradient(280px circle at var(--gx, 50%) var(--gy, 50%), rgba(0,51,231,.07), transparent 70%);
+  opacity: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.svc-card:hover::before { opacity: 1; }
+.svc-card > * { position: relative; z-index: 1; }
+
+/* ---- About cards will-change ---- */
+.acard { will-change: transform; }
+
+/* ---- Industry cards will-change ---- */
+.ind-card { will-change: transform, opacity; }
+
+/* Ensure bg inside ind-card transitions smoothly on leave ---- */
+.ind-card__bg { will-change: transform; }

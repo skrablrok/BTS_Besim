@@ -1,0 +1,92 @@
+/* BT Inženiring — responsive breakpoints for the main page */
+
+/* ==========================================
+   Responsive
+========================================== */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .step-arrow { display: none; }
+  .footer__top { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- Hero text responsive breakpoints ---- */
+
+/* Large desktop (≥1400px): give the 3D canvas more room, text still stretches */
+@media (min-width: 1400px) {
+  .hero__container { gap: 4rem; }
+  .hero__3d        { flex: 0 0 40%; height: 540px; }
+}
+
+/* ≤960px: hide 3D canvas, text goes full width */
+@media (max-width: 960px) {
+  .hero__3d { display: none; }
+  .hero__container {
+    padding-left:  clamp(1.5rem, 6vw, 60px);
+    padding-right: clamp(1.5rem, 6vw, 60px);
+  }
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .hero__title { font-size: clamp(26px, 6.5vw, 52px); }
+  .hero__sub   { font-size: clamp(14px, 2.2vw, 17px); }
+  .hero__badge { font-size: 11px; }
+}
+
+/* Mobile (≤500px) */
+@media (max-width: 500px) {
+  .hero__container {
+    padding-left:  1.25rem;
+    padding-right: 1.25rem;
+  }
+  .hero__title { font-size: clamp(24px, 8vw, 42px); line-height: 1.15; }
+  .hero__sub   { font-size: 14px; }
+}
+
+@media (max-width: 900px) {
+  .about-grid        { grid-template-columns: 1fr; gap: 3rem; }
+  .about-mini-cards  { grid-template-columns: 1fr 1fr; }
+  .ind-grid          { grid-template-columns: 1fr 1fr; }
+  .contact-grid      { grid-template-columns: 1fr; }
+  .cert-row          { justify-content: center; }
+}
+
+@media (max-width: 600px) {
+  .about-photo-secondary { display: none; }
+  .about-mini-cards      { grid-template-columns: 1fr; }
+  .cert-row              { gap: 1.25rem; }
+  .cert-item img         { max-height: 90px; }
+}
+
+@media (max-width: 768px) {
+  .nav__links { display: none; }
+  .hamburger  { display: flex; }
+
+  .stats__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .stat-divider { display: none; }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .ind-grid      { grid-template-columns: 1fr; }
+  .ind-card      { height: 340px; }
+
+  .steps { grid-template-columns: 1fr 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+  .footer__top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+
+@media (max-width: 500px) {
+  .hero__btns  { flex-direction: column; }
+  .stats__inner { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .footer__top { grid-template-columns: 1fr; }
+  .contact-form { padding: 1.75rem 1.25rem; }
+}

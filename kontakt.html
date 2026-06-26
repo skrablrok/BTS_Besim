@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | BT Inženiring – Skupina BTINOX</title>
+    <meta name="description" content="Kontaktirajte BT Inženiring – pošljite povpraševanje za ograje, stopnice, drsna vrata ali jeklene konstrukcije. Kidričeva cesta 6, 1270 Litija.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/subpages.css">
+    <link rel="stylesheet" href="css/projekti.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="nav" id="nav">
+    <div class="nav__container">
+        <a href="inzeniring.html" class="nav__logo"><img src="index/bts_logo.png" alt="BT Inženiring"></a>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="inzeniring.html" class="nav__link">Domov</a></li>
+            <li class="has-dropdown">
+                <a href="inzeniring.html#storitve" class="nav__link">Storitve <i class='bx bx-chevron-down'></i></a>
+                <ul class="nav__submenu">
+                    <li><a href="ograje.html">Ograje</a></li>
+                    <li><a href="stopnice.html">Stopnice</a></li>
+                    <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li>
+                    <li><a href="drsna-vrata.html">Drsna vrata</a></li>
+                    <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+                    <li><a href="kljucavnicarska-dela.html">Ključavničarska dela</a></li>
+                </ul>
+            </li>
+            <li><a href="o-nas.html" class="nav__link">O nas</a></li>
+            <li><a href="galerija.html" class="nav__link">Galerija</a></li>
+            <li><a href="projekti.html" class="nav__link">Projekti</a></li>
+            <li><a href="kontakt.html" class="nav__link nav__link--cta">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><ul>
+    <li><a href="inzeniring.html" class="mob-link">Domov</a></li>
+    <li><a href="inzeniring.html#storitve" class="mob-link">Storitve</a></li>
+    <li><a href="o-nas.html" class="mob-link">O nas</a></li>
+    <li><a href="galerija.html" class="mob-link">Galerija</a></li>
+    <li><a href="projekti.html" class="mob-link">Projekti</a></li>
+    <li><a href="kontakt.html" class="mob-link">Kontakt</a></li>
+</ul></div>
+<div class="mob-overlay" id="mobOverlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('index/slika_za_naslov.png');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="inzeniring.html">Domov</a>
+            <span class="breadcrumb__sep">›</span>
+            <span>Kontakt</span>
+        </nav>
+        <h1 class="page-hero__title">Stopimo v <span>stik</span></h1>
+        <p class="page-hero__sub">Pošljite nam povpraševanje ali nas pokličite – skupaj bomo našli pravo kovinarsko rešitev za vaš projekt.</p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-page">
+    <div class="container">
+        <div class="contact-page__grid">
+
+            <!-- LEFT: Info -->
+            <div class="contact-info reveal">
+                <span class="section-tag">Kontakt</span>
+                <h2>Smo tukaj za vas</h2>
+                <p>Naša ekipa je vam na voljo za svetovanje in pripravo ponudbe. Obiščite nas v delavnici ali nas kontaktirajte po telefonu ali e-pošti.</p>
+
+                <div class="contact-items">
+                    <div class="c-item">
+                        <div class="c-item__icon"><i class='bx bx-map'></i></div>
+                        <div>
+                            <strong>Sedež podjetja</strong>
+                            <p>Kidričeva cesta 6, 1270 Litija</p>
+                        </div>
+                    </div>
+                    <div class="c-item">
+                        <div class="c-item__icon"><i class='bx bxs-factory'></i></div>
+                        <div>
+                            <strong>Proizvodna hala</strong>
+                            <p>Šmartinska cesta 32, 1000 Ljubljana</p>
+                        </div>
+                    </div>
+                    <div class="c-item">
+                        <div class="c-item__icon"><i class='bx bx-phone'></i></div>
+                        <div>
+                            <strong>Telefon</strong>
+                            <a href="tel:+38630391432">+386 30 391 432</a>
+                        </div>
+                    </div>
+                    <div class="c-item">
+                        <div class="c-item__icon"><i class='bx bx-envelope'></i></div>
+                        <div>
+                            <strong>E-pošta</strong>
+                            <a href="mailto:info@btinox.si">info@btinox.si</a>
+                        </div>
+                    </div>
+                    <div class="c-item">
+                        <div class="c-item__icon"><i class='bx bx-time'></i></div>
+                        <div>
+                            <strong>Delovni čas</strong>
+                            <p>Pon–Pet: 7:00–16:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">Del skupine <a href="https://btinox.si" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">BTINOX d.o.o.</a></p>
+            </div>
+
+            <!-- RIGHT: Form -->
+            <div class="contact-form reveal">
+                <form action="https://formsubmit.co/info@btinox.si" method="POST">
+                    <input type="hidden" name="_subject" value="Novo povpraševanje – BT Inženiring">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-row">
+                        <div class="form-group"><label>Ime in priimek *</label><input type="text" name="name" required placeholder="Janez Novak"></div>
+                        <div class="form-group"><label>Podjetje</label><input type="text" name="company" placeholder="Podjetje d.o.o."></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label>E-pošta *</label><input type="email" name="email" required placeholder="janez@podjetje.si"></div>
+                        <div class="form-group"><label>Telefon</label><input type="tel" name="phone" placeholder="+386 XX XXX XXX"></div>
+                    </div>
+                    <div class="form-group"><label>Vrsta storitve</label>
+                        <select name="service">
+                            <option value="" disabled selected>Izberite storitev</option>
+                            <option>Ograje</option><option>Stopnice</option><option>Požarne stopnice</option>
+                            <option>Drsna vrata</option><option>Jeklene konstrukcije</option>
+                            <option>Ključavničarska dela</option><option>Drugo</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Sporočilo *</label><textarea name="message" rows="6" required placeholder="Opišite vaš projekt – dimenzije, material, lokacija montaže..."></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full"><i class='bx bx-send'></i> Pošlji povpraševanje</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__brand">
+            <div class="footer__logo"><img src="index/bts_logo.png" alt="BT Inženiring"></div>
+            <p>Kakovostna ključavničarska in kovinska dela po meri. Del <strong>skupine BTINOX</strong>.</p>
+            <a href="https://www.linkedin.com/company/btinox" target="_blank" class="footer__linkedin"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <div class="footer__col"><h4>Storitve</h4><ul>
+            <li><a href="ograje.html">Ograje</a></li><li><a href="stopnice.html">Stopnice</a></li>
+            <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li><li><a href="drsna-vrata.html">Drsna vrata</a></li>
+            <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Podjetje</h4><ul>
+            <li><a href="o-nas.html">O nas</a></li><li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li><li><a href="index.html">BTINOX d.o.o.</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Kontakt</h4>
+            <p>Kidričeva cesta 6<br>1270 Litija, Slovenija</p>
+            <a href="tel:+38630391432">+386 30 391 432</a>
+            <a href="mailto:info@btinox.si">info@btinox.si</a>
+        </div>
+    </div>
+    <div class="footer__bottom"><p>© 2025 BT Inženiring d.o.o. Vse pravice pridržane. | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a></p></div>
+</footer>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
+
+

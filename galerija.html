@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija | BT Inženiring – Skupina BTINOX</title>
+    <meta name="description" content="Galerija del BT Inženiring – ograje, stopnice, drsna vrata, jeklene konstrukcije in ključavničarska dela po meri.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/subpages.css">
+    <link rel="stylesheet" href="css/projekti.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="nav" id="nav">
+    <div class="nav__container">
+        <a href="inzeniring.html" class="nav__logo"><img src="index/bts_logo.png" alt="BT Inženiring"></a>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="inzeniring.html" class="nav__link">Domov</a></li>
+            <li class="has-dropdown">
+                <a href="inzeniring.html#storitve" class="nav__link">Storitve <i class='bx bx-chevron-down'></i></a>
+                <ul class="nav__submenu">
+                    <li><a href="ograje.html">Ograje</a></li>
+                    <li><a href="stopnice.html">Stopnice</a></li>
+                    <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li>
+                    <li><a href="drsna-vrata.html">Drsna vrata</a></li>
+                    <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+                    <li><a href="kljucavnicarska-dela.html">Ključavničarska dela</a></li>
+                </ul>
+            </li>
+            <li><a href="o-nas.html" class="nav__link">O nas</a></li>
+            <li><a href="galerija.html" class="nav__link">Galerija</a></li>
+            <li><a href="projekti.html" class="nav__link">Projekti</a></li>
+            <li><a href="kontakt.html" class="nav__link nav__link--cta">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><ul>
+    <li><a href="inzeniring.html" class="mob-link">Domov</a></li>
+    <li><a href="inzeniring.html#storitve" class="mob-link">Storitve</a></li>
+    <li><a href="o-nas.html" class="mob-link">O nas</a></li>
+    <li><a href="galerija.html" class="mob-link">Galerija</a></li>
+    <li><a href="projekti.html" class="mob-link">Projekti</a></li>
+    <li><a href="kontakt.html" class="mob-link">Kontakt</a></li>
+</ul></div>
+<div class="mob-overlay" id="mobOverlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('index/slika_za_naslov.png');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="inzeniring.html">Domov</a>
+            <span class="breadcrumb__sep">›</span>
+            <span>Galerija</span>
+        </nav>
+        <h1 class="page-hero__title">Galerija <span>naših del</span></h1>
+        <p class="page-hero__sub">Oglejte si izbor naših projektov – ograje, stopnice, drsna vrata in jeklene konstrukcije.</p>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="section-tag">Naši projekti</span>
+            <h2>Izbor del</h2>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Vsa dela</button>
+            <button class="filter-btn" data-filter="ograje">Ograje</button>
+            <button class="filter-btn" data-filter="stopnice">Stopnice</button>
+            <button class="filter-btn" data-filter="drsna-vrata">Drsna vrata</button>
+            <button class="filter-btn" data-filter="konstrukcije">Konstrukcije</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item reveal" data-category="ograje">
+                <img src="index/storitve_o_nas.jpg" alt="Inox balkonska ograda">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Inox balkonska ograda</div>
+            </div>
+            <div class="gallery-item reveal" data-category="stopnice">
+                <img src="index/o_nas_btinox.jpeg" alt="Jeklene stopnice">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Jeklene stopnice</div>
+            </div>
+            <div class="gallery-item reveal" data-category="ograje">
+                <img src="index/farmacija.jpg" alt="Stopniščna ograda">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Stopniščna ograda</div>
+            </div>
+            <div class="gallery-item reveal" data-category="drsna-vrata">
+                <img src="index/biofarmacija.jpg" alt="Inox drsna vrata">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Inox drsna vrata</div>
+            </div>
+            <div class="gallery-item reveal" data-category="konstrukcije">
+                <img src="index/prehrambena_industrija.jpg" alt="Kovinski nadstrešek">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Kovinski nadstrešek</div>
+            </div>
+            <div class="gallery-item reveal" data-category="stopnice">
+                <img src="index/storitve_o_nas.jpg" alt="Spiralne stopnice">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Spiralne stopnice</div>
+            </div>
+            <div class="gallery-item reveal" data-category="konstrukcije">
+                <img src="index/o_nas_btinox.jpeg" alt="Jeklena fasada">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Jeklena fasada</div>
+            </div>
+            <div class="gallery-item reveal" data-category="drsna-vrata">
+                <img src="index/farmacija.jpg" alt="Industrijski portal">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Industrijski portal</div>
+            </div>
+            <div class="gallery-item reveal" data-category="ograje">
+                <img src="index/biofarmacija.jpg" alt="Panelna ograda">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Panelna ograda</div>
+            </div>
+            <div class="gallery-item reveal" data-category="stopnice">
+                <img src="index/prehrambena_industrija.jpg" alt="Požarne stopnice">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Požarne stopnice</div>
+            </div>
+            <div class="gallery-item reveal" data-category="konstrukcije">
+                <img src="index/storitve_o_nas.jpg" alt="Jekleni nosilci">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Jekleni nosilci</div>
+            </div>
+            <div class="gallery-item reveal" data-category="ograje">
+                <img src="index/o_nas_btinox.jpeg" alt="Kovane ograje">
+                <div class="gallery-item__overlay"><i class='bx bx-zoom-in'></i></div>
+                <div class="gallery-item__label">Kovane ograje</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+    <div class="container">
+        <h2 class="light">Ne najdete kar iščete?</h2>
+        <p class="light">Kontaktirajte nas – skupaj bomo ustvarili točno to, kar si zamišljate.</p>
+        <div class="cta-banner__btns">
+            <a href="kontakt.html" class="btn btn-primary">Kontaktirajte nas</a>
+            <a href="tel:+38630391432" class="btn btn-ghost">+386 30 391 432</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__brand">
+            <div class="footer__logo"><img src="index/bts_logo.png" alt="BT Inženiring"></div>
+            <p>Kakovostna ključavničarska in kovinska dela po meri. Del <strong>skupine BTINOX</strong>.</p>
+            <a href="https://www.linkedin.com/company/btinox" target="_blank" class="footer__linkedin"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <div class="footer__col"><h4>Storitve</h4><ul>
+            <li><a href="ograje.html">Ograje</a></li><li><a href="stopnice.html">Stopnice</a></li>
+            <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li><li><a href="drsna-vrata.html">Drsna vrata</a></li>
+            <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Podjetje</h4><ul>
+            <li><a href="o-nas.html">O nas</a></li><li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li><li><a href="index.html">BTINOX d.o.o.</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Kontakt</h4>
+            <p>Kidričeva cesta 6<br>1270 Litija, Slovenija</p>
+            <a href="tel:+38630391432">+386 30 391 432</a>
+            <a href="mailto:info@btinox.si">info@btinox.si</a>
+        </div>
+    </div>
+    <div class="footer__bottom"><p>© 2025 BT Inženiring d.o.o. Vse pravice pridržane. | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a></p></div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btns = document.querySelectorAll('.filter-btn');
+    var items = document.querySelectorAll('.gallery-item');
+    btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            btns.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var filter = btn.getAttribute('data-filter');
+            items.forEach(function(item) {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
+
+

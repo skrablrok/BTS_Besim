@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualni projekti | BT Inženiring – Skupina BTINOX</title>
+    <meta name="description" content="Vpogled v aktualne in nedavno zaključene projekte BT Inženiring – ograje, stopnice, drsna vrata, jeklene konstrukcije in ključavničarska dela.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/subpages.css">
+    <link rel="stylesheet" href="css/projekti.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="nav" id="nav">
+    <div class="nav__container">
+        <a href="inzeniring.html" class="nav__logo">
+            <img src="index/bts_logo.png" alt="BT Inženiring">
+        </a>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="inzeniring.html" class="nav__link">Domov</a></li>
+            <li class="has-dropdown">
+                <a href="inzeniring.html#storitve" class="nav__link">Storitve <i class='bx bx-chevron-down'></i></a>
+                <ul class="nav__submenu">
+                    <li><a href="ograje.html">Ograje</a></li>
+                    <li><a href="stopnice.html">Stopnice</a></li>
+                    <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li>
+                    <li><a href="drsna-vrata.html">Drsna vrata</a></li>
+                    <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+                    <li><a href="kljucavnicarska-dela.html">Ključavničarska dela</a></li>
+                </ul>
+            </li>
+            <li><a href="o-nas.html" class="nav__link">O nas</a></li>
+            <li><a href="galerija.html" class="nav__link">Galerija</a></li>
+            <li><a href="projekti.html" class="nav__link">Projekti</a></li>
+            <li><a href="kontakt.html" class="nav__link nav__link--cta">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="inzeniring.html" class="mob-link">Domov</a></li>
+        <li><a href="inzeniring.html#storitve" class="mob-link">Storitve</a></li>
+        <li><a href="o-nas.html" class="mob-link">O nas</a></li>
+        <li><a href="galerija.html" class="mob-link">Galerija</a></li>
+        <li><a href="projekti.html" class="mob-link">Projekti</a></li>
+        <li><a href="kontakt.html" class="mob-link">Kontakt</a></li>
+    </ul>
+</div>
+<div class="mob-overlay" id="mobOverlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('index/slika_za_naslov.png');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="inzeniring.html">Domov</a>
+            <span class="breadcrumb__sep">›</span>
+            <span>Projekti</span>
+        </nav>
+        <h1 class="page-hero__title">Aktualni <span>projekti</span></h1>
+        <p class="page-hero__sub">Poglejte, kaj trenutno gradimo – od inox ograj in jeklenih stopnic do nadstrešnic in požarnih stopnic. Vsak projekt je unikat.</p>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects-section">
+    <div class="container">
+        <div class="section-head section-head--light reveal">
+            <span class="section-tag section-tag--light">Naši projekti</span>
+            <h2 class="light">Kaj delamo zdaj</h2>
+            <p class="light">Vpogled v tekoče in nedavno zaključene projekte – od prvega skice do montaže na objektu.</p>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Vsi projekti</button>
+            <button class="filter-btn" data-filter="active">V teku</button>
+            <button class="filter-btn" data-filter="done">Zaključeni</button>
+            <button class="filter-btn" data-filter="plan">V pripravi</button>
+        </div>
+
+        <!-- Projects grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+            <!-- Project 1 — Fence -->
+            <article class="project-card reveal" data-status="active">
+                <div class="project-canvas-wrap">
+                    <canvas class="project-canvas" id="proj-canvas-1"></canvas>
+                    <span class="project-status project-status--active">V teku</span>
+                </div>
+                <div class="project-card__body">
+                    <span class="section-tag">Ograje</span>
+                    <h3>Balkonske inox ograje za stanovanjski blok</h3>
+                    <div class="project-meta">
+                        <span><i class='bx bx-map-pin'></i> Ljubljana – Fužine</span>
+                        <span><i class='bx bx-calendar'></i> Junij 2025</span>
+                    </div>
+                    <p>Dobava in montaža inox balkonskih ograj za 32 stanovanj v večstanovanjski stavbi. Material AISI 316L, višina 110 cm, s steklenimi polnili po naročilu.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Inox AISI 316L</span>
+                        <span class="project-tag">Ograje</span>
+                        <span class="project-tag">32 balkonov</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 — Stairs -->
+            <article class="project-card reveal" data-status="active">
+                <div class="project-canvas-wrap">
+                    <canvas class="project-canvas" id="proj-canvas-2"></canvas>
+                    <span class="project-status project-status--active">V teku</span>
+                </div>
+                <div class="project-card__body">
+                    <span class="section-tag">Stopnice</span>
+                    <h3>Jeklene notranje stopnice za poslovni objekt</h3>
+                    <div class="project-meta">
+                        <span><i class='bx bx-map-pin'></i> Kranj – Industrijska cona</span>
+                        <span><i class='bx bx-calendar'></i> Maj 2025</span>
+                    </div>
+                    <p>Projektiranje in izvedba jeklene stopniščne konstrukcije za 4-nadstropno poslovno stavbo. Inox ograja z lesenim ročajem, protizdrsni vložki iz aluminijeve rešetke.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">S235 Jeklo</span>
+                        <span class="project-tag">Stopnice</span>
+                        <span class="project-tag">4 nadstropja</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 — Sliding Doors -->
+            <article class="project-card reveal" data-status="done">
+                <div class="project-canvas-wrap">
+                    <canvas class="project-canvas" id="proj-canvas-3"></canvas>
+                    <span class="project-status project-status--done">Zaključeno</span>
+                </div>
+                <div class="project-card__body">
+                    <span class="section-tag">Drsna vrata</span>
+                    <h3>Električna industrijska drsna vrata za skladišče</h3>
+                    <div class="project-meta">
+                        <span><i class='bx bx-map-pin'></i> Maribor</span>
+                        <span><i class='bx bx-calendar'></i> April 2025</span>
+                    </div>
+                    <p>Električno gnana industrijska drsna vrata 6 × 4 m z varnostnimi fotoceličnimi senzorji, mehkim zagonom in daljinskim upravljanjem. Površina: vroče cinkanje.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Električni pogon</span>
+                        <span class="project-tag">6 × 4 m</span>
+                        <span class="project-tag">Cinkanje</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 — Canopy -->
+            <article class="project-card reveal" data-status="plan">
+                <div class="project-canvas-wrap">
+                    <canvas class="project-canvas" id="proj-canvas-4"></canvas>
+                    <span class="project-status project-status--plan">V pripravi</span>
+                </div>
+                <div class="project-card__body">
+                    <span class="section-tag">Jeklene konstrukcije</span>
+                    <h3>Jeklena nadstrešnica za parkirišče</h3>
+                    <div class="project-meta">
+                        <span><i class='bx bx-map-pin'></i> Ljubljana – BTC</span>
+                        <span><i class='bx bx-calendar'></i> Julij 2025</span>
+                    </div>
+                    <p>Načrtovanje in izvedba jeklene nadstrešnice za 40 parkirnih mest. Statični izračun v pripravi, material S355, strešna kritina iz trapezne pločevine. Montaža predvidena september 2025.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">S355 Jeklo</span>
+                        <span class="project-tag">40 mest</span>
+                        <span class="project-tag">Statika</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5 — Fire Stairs -->
+            <article class="project-card reveal" data-status="active">
+                <div class="project-canvas-wrap">
+                    <canvas class="project-canvas" id="proj-canvas-5"></canvas>
+                    <span class="project-status project-status--active">V teku</span>
+                </div>
+                <div class="project-card__body">
+                    <span class="section-tag">Požarne stopnice</span>
+                    <h3>Zunanje požarne evakuacijske stopnice za industrijsko halo</h3>
+                    <div class="project-meta">
+                        <span><i class='bx bx-map-pin'></i> Celje</span>
+                        <span><i class='bx bx-calendar'></i> Junij 2025</span>
+                    </div>
+                    <p>Certificirane jeklene požarne stopnice za dostop na streho industrijske hale. Varnostni koš, protizdrsni aluminijevi vložki, EN 1090-2 EXC 2. Dokumentacija in PZI v pripravi.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">EN 1090-2 EXC 2</span>
+                        <span class="project-tag">Varnostni koš</span>
+                        <span class="project-tag">PZI</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 6 — Gate / Locksmith -->
+            <article class="project-card reveal" data-status="done">
+                <div class="project-canvas-wrap">
+                    <canvas class="project-canvas" id="proj-canvas-6"></canvas>
+                    <span class="project-status project-status--done">Zaključeno</span>
+                </div>
+                <div class="project-card__body">
+                    <span class="section-tag">Ključavničarska dela</span>
+                    <h3>Ročno kovana vhodna vrata za stanovanjsko hišo</h3>
+                    <div class="project-meta">
+                        <span><i class='bx bx-map-pin'></i> Litija</span>
+                        <span><i class='bx bx-calendar'></i> Maj 2025</span>
+                    </div>
+                    <p>Ročno kovana vhodna vrata s steklenim polnilom in dekorativnimi spiralami. Površinska obdelava: vroče cinkanje + RAL 9005 mat. Kovanje in montaža v lastni delavnici.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Ročno kovanje</span>
+                        <span class="project-tag">RAL 9005</span>
+                        <span class="project-tag">Steklo</span>
+                    </div>
+                </div>
+            </article>
+
+        </div><!-- /projects-grid -->
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+    <div class="container">
+        <h2 class="light reveal">Imate projekt za nas?</h2>
+        <p class="light reveal">Ne glede na obseg – od enostavnega nabiralnika do jeklene konstrukcije. Kontaktirajte nas in skupaj začnemo.</p>
+        <div class="cta-banner__btns reveal">
+            <a href="kontakt.html" class="btn btn-primary">Pošlji povpraševanje</a>
+            <a href="tel:+38630391432" class="btn btn-ghost">+386 30 391 432</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__brand">
+            <div class="footer__logo"><img src="index/bts_logo.png" alt="BT Inženiring"></div>
+            <p>Kakovostna ključavničarska in kovinska dela po meri. Del <strong>skupine BTINOX</strong>.</p>
+            <a href="https://www.linkedin.com/company/btinox" target="_blank" class="footer__linkedin"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <div class="footer__col">
+            <h4>Storitve</h4>
+            <ul>
+                <li><a href="ograje.html">Ograje</a></li>
+                <li><a href="stopnice.html">Stopnice</a></li>
+                <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li>
+                <li><a href="drsna-vrata.html">Drsna vrata</a></li>
+                <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Podjetje</h4>
+            <ul>
+                <li><a href="o-nas.html">O nas</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="index.html">BTINOX d.o.o.</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Kontakt</h4>
+            <p>Kidričeva cesta 6<br>1270 Litija, Slovenija</p>
+            <a href="tel:+38630391432">+386 30 391 432</a>
+            <a href="mailto:info@btinox.si">info@btinox.si</a>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>© 2025 BT Inženiring d.o.o. Vse pravice pridržane. | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a></p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/projekti.js"></script>
+<script>
+// Filter by status
+(function () {
+    var btns  = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.project-card');
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            btns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var f = btn.getAttribute('data-filter');
+            cards.forEach(function (card) {
+                card.style.display = (f === 'all' || card.getAttribute('data-status') === f) ? '' : 'none';
+            });
+        });
+    });
+})();
+</script>
+</body>
+</html>
+
+

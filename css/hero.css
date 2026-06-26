@@ -1,0 +1,121 @@
+/* BT Inženiring — hero section, scroll hint animation */
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  transition: transform 8s ease;
+}
+.hero:hover .hero__bg { transform: scale(1.0); }
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,15,50,.88) 0%, rgba(0,51,231,.28) 100%);
+}
+
+.hero__container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-left: clamp(2rem, 8vw, 120px);
+  padding-right: clamp(2rem, 4vw, 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero__content {
+  flex: 0 0 54%;
+  min-width: 0;
+}
+
+.hero__3d {
+  flex: 0 0 38%;
+  height: 480px;
+}
+
+.hero__badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.9);
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  padding: .45rem 1.1rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.hero__title {
+  font-size: clamp(28px, 4.5vw, 76px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.hero__accent { color: #7aaaff; }
+.nowrap { white-space: nowrap; }
+
+.hero__sub {
+  font-size: clamp(14px, 1.4vw, 18px);
+  color: rgba(255,255,255,.78);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.hero__btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Scroll hint */
+.hero__scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scroll-dot {
+  width: 26px;
+  height: 42px;
+  border: 2px solid rgba(255,255,255,.45);
+  border-radius: 13px;
+  position: relative;
+}
+.scroll-dot::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: #fff;
+  border-radius: 2px;
+  animation: scrollAnim 1.8s ease infinite;
+}
+@keyframes scrollAnim {
+  0%   { top: 6px;  opacity: 1; }
+  100% { top: 22px; opacity: 0; }
+}

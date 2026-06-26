@@ -1,0 +1,156 @@
+/* BT Inženiring — navigation, hamburger, mobile menu */
+
+/* ---------- Navigation ---------- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: .6rem 0;
+  transition: background .35s ease, box-shadow .35s ease, padding .35s ease;
+}
+
+.nav.scrolled {
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0,0,0,.1);
+  padding: .4rem 0;
+}
+
+.nav__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__logo img {
+  height: 88px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  transition: filter .35s ease;
+}
+.nav.scrolled .nav__logo img {
+  filter: none;
+}
+
+/* Desktop links */
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav__link {
+  font-size: clamp(13px, .95vw, 15px);
+  font-weight: 500;
+  color: rgba(255,255,255,.9);
+  position: relative;
+  transition: color var(--transition);
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--blue);
+  transition: width var(--transition);
+}
+
+.nav__link:hover::after        { width: 100%; }
+.nav.scrolled .nav__link       { color: var(--dark); }
+.nav.scrolled .nav__link:hover { color: var(--blue); }
+
+.nav__link--cta {
+  background: var(--blue);
+  color: #fff !important;
+  padding: .55rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.nav__link--cta:hover   { background: var(--blue-dark); transform: translateY(-1px); }
+.nav__link--cta::after  { display: none; }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+.nav.scrolled .hamburger span { background: var(--dark); }
+
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---------- Mobile Menu ---------- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: min(320px, 85vw);
+  height: 100vh;
+  background: var(--dark);
+  z-index: 2000;
+  padding: 6rem 2.5rem 2.5rem;
+  transition: right .4s ease;
+}
+
+.mobile-menu.active { right: 0; }
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.mob-link {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.75);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  transition: color var(--transition), padding-left var(--transition);
+}
+.mob-link:hover {
+  color: #fff;
+  padding-left: .5rem;
+}
+
+.mob-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  z-index: 1999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease;
+}
+.mob-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

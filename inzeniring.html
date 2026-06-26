@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Inženiring | Ključavničarska dela – ograje, stopnice, drsna vrata | Skupina BTINOX</title>
+    <meta name="description" content="BT Inženiring d.o.o. je del skupine BTINOX in izvaja kakovostna ključavničarska dela po meri – ograje, stopnice, požarne stopnice, drsna vrata in jeklene konstrukcije.">
+    <meta name="keywords" content="btinox, bt inženiring, ključavničarska dela, ograje, stopnice, požarne stopnice, drsna vrata, jeklene konstrukcije, kovinarstvo, inox, nerjavno jeklo, Litija, Slovenija">
+    <meta name="author" content="Rok Škrabl">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "BT Inženiring d.o.o.",
+      "alternateName": "BT Inženiring BTINOX",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "BTINOX d.o.o.",
+        "url": "https://btinox.si"
+      },
+      "description": "Ključavničarska dela po meri – ograje, stopnice, požarne stopnice, drsna vrata, jeklene konstrukcije. Del skupine BTINOX.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kidričeva cesta 6",
+        "addressLocality": "Litija",
+        "postalCode": "1270",
+        "addressCountry": "SI"
+      },
+      "telephone": "+38630391432",
+      "email": "info@btinox.si",
+      "sameAs": ["https://btinox.si"]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/subpages.css">
+    <link rel="stylesheet" href="css/projekti.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#home" class="nav__logo">
+                <img src="index/bts_logo.png" alt="BT Inženiring">
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#home" class="nav__link">Domov</a></li>
+                <li class="has-dropdown">
+                    <a href="#storitve" class="nav__link">Storitve <i class='bx bx-chevron-down'></i></a>
+                    <ul class="nav__submenu">
+                        <li><a href="ograje.html">Ograje</a></li>
+                        <li><a href="stopnice.html">Stopnice</a></li>
+                        <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li>
+                        <li><a href="drsna-vrata.html">Drsna vrata</a></li>
+                        <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+                        <li><a href="kljucavnicarska-dela.html">Ključavničarska dela</a></li>
+                    </ul>
+                </li>
+                <li><a href="o-nas.html" class="nav__link">O nas</a></li>
+                <li><a href="galerija.html" class="nav__link">Galerija</a></li>
+                <li><a href="projekti.html" class="nav__link">Projekti</a></li>
+                <li><a href="kontakt.html" class="nav__link nav__link--cta">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Meni">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="mob-link">Domov</a></li>
+            <li><a href="#storitve" class="mob-link">Storitve</a></li>
+            <li><a href="#o-nas" class="mob-link">O nas</a></li>
+            <li><a href="#industrije" class="mob-link">Področja</a></li>
+            <li><a href="#kontakt" class="mob-link">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="mob-overlay" id="mobOverlay"></div>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero__bg" style="background-image: url('index/slika_za_naslov.png')"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">Skupina BTINOX · Ključavničarska dela · Po meri</div>
+                <h1 class="hero__title">
+                    <span class="nowrap">Kovinska dela</span><br>
+                    <span class="hero__accent">po vaši meri</span>
+                </h1>
+                <p class="hero__sub">
+                    Ograje, stopnice, požarne stopnice, drsna vrata in jeklene konstrukcije –
+                    izdelano z natančnostjo in kakovostjo, ki jo prepoznate po imenu BTINOX.
+                </p>
+                <div class="hero__btns">
+                    <a href="#storitve" class="btn btn-primary">Naše storitve</a>
+                    <a href="#kontakt" class="btn btn-ghost">Kontaktirajte nas</a>
+                </div>
+            </div>
+            <div class="hero__3d" id="heroCanvas3d"></div>
+        </div>
+        <div class="hero__scroll-hint">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats__inner">
+            <div class="stat reveal">
+                <span class="stat__num">15<span class="stat__plus">+</span></span>
+                <span class="stat__lbl">Let izkušenj</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat reveal">
+                <span class="stat__num">200<span class="stat__plus">+</span></span>
+                <span class="stat__lbl">Zaključenih projektov</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat reveal">
+                <span class="stat__num">50<span class="stat__plus">+</span></span>
+                <span class="stat__lbl">Zadovoljnih strank</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat reveal">
+                <span class="stat__num">5</span>
+                <span class="stat__lbl">Certifikatov kakovosti</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="storitve" id="storitve">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Kaj ponujamo</span>
+                <h2>Naše storitve</h2>
+                <p>Kakovostna ključavničarska dela iz nerjavečega jekla in jekla – od prvega načrta do montaže na objektu.</p>
+            </div>
+            <div class="services-grid">
+                <div class="svc-card reveal">
+                    <div class="svc-card__icon"><i class='bx bx-border-all'></i></div>
+                    <h3>Ograje</h3>
+                    <p>Sodobne ograjne sisteme za balkone, terase, stopnišča in okolico objektov – iz inoksa ali jekla, po vaši meri.</p>
+                    <ul class="svc-list">
+                        <li>Inox balkonske ograje</li>
+                        <li>Jeklene panelne ograje</li>
+                        <li>Stopniščne ograje</li>
+                        <li>Zunanje ograjne sisteme</li>
+                    </ul>
+                    <div class="svc-card__line"></div>
+                    <a href="ograje.html" class="svc-card__more">Preberite več <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="svc-card reveal">
+                    <div class="svc-card__icon"><i class='bx bx-trending-up'></i></div>
+                    <h3>Stopnice</h3>
+                    <p>Notranje in zunanje stopnice iz nerjavečega jekla ali jekla – ravne, spiralne ali dvokrake, s stopnicami po meri.</p>
+                    <ul class="svc-list">
+                        <li>Ravne in dvokrake stopnice</li>
+                        <li>Spiralne stopnice</li>
+                        <li>Inox stopniščne ograje</li>
+                        <li>Protizdrsni stopniški vložki</li>
+                    </ul>
+                    <div class="svc-card__line"></div>
+                    <a href="stopnice.html" class="svc-card__more">Preberite več <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="svc-card reveal">
+                    <div class="svc-card__icon"><i class='bx bx-exit'></i></div>
+                    <h3>Požarne stopnice</h3>
+                    <p>Jeklene požarne stopnice in evakuacijske poti v skladu z veljavnimi predpisi in standardi za varstvo pred požarom.</p>
+                    <ul class="svc-list">
+                        <li>Zunanja požarna lestev</li>
+                        <li>Točkaste evakuacijske stopnice</li>
+                        <li>Protizdrsne površine</li>
+                        <li>Certifikat skladnosti</li>
+                    </ul>
+                    <div class="svc-card__line"></div>
+                    <a href="pozarne-stopnice.html" class="svc-card__more">Preberite več <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="svc-card reveal">
+                    <div class="svc-card__icon"><i class='bx bx-move-horizontal'></i></div>
+                    <h3>Drsna vrata</h3>
+                    <p>Drsna vrata in portali iz jekla ali inoksa za industrijsko in stanovanjsko rabo – ročni ali avtomatski pogon.</p>
+                    <ul class="svc-list">
+                        <li>Inox drsna vrata</li>
+                        <li>Jekleni drsni portali</li>
+                        <li>Avtomatski pogon</li>
+                        <li>Varnostni sistemi</li>
+                    </ul>
+                    <div class="svc-card__line"></div>
+                    <a href="drsna-vrata.html" class="svc-card__more">Preberite več <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="svc-card reveal">
+                    <div class="svc-card__icon"><i class='bx bx-building'></i></div>
+                    <h3>Konstrukcije</h3>
+                    <p>Jeklene in inox konstrukcije po meri – nadstreški, nosilci, fasadne rešitve in specialne kovinske konstrukcije.</p>
+                    <ul class="svc-list">
+                        <li>Kovinski nadstreški</li>
+                        <li>Jekleni nosilci in okvirji</li>
+                        <li>Kovinske fasade in obloge</li>
+                        <li>Konzolne konstrukcije</li>
+                    </ul>
+                    <div class="svc-card__line"></div>
+                    <a href="konstrukcije.html" class="svc-card__more">Preberite več <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="svc-card reveal">
+                    <div class="svc-card__icon">
+                        <i class='bx bx-wrench'></i>
+                    </div>
+                    <h3>Ključavničarska dela</h3>
+                    <p>Splošna ključavničarska in kovinska dela za dom, podjetje ali industrijo – varnostne rešetke, kovani okraski in servis.</p>
+                    <ul class="svc-list">
+                        <li>Varnostne kovane rešetke</li>
+                        <li>Kovani okraski in elementi</li>
+                        <li>Poštni nabiralniki po meri</li>
+                        <li>Popravila in servis</li>
+                    </ul>
+                    <div class="svc-card__line"></div>
+                    <a href="kljucavnicarska-dela.html" class="svc-card__more">Preberite več <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="o-nas" id="o-nas">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <span class="section-tag">O podjetju</span>
+                    <h2>Kovinska kakovost pod imenom BTINOX</h2>
+                    <p>BT Inženiring d.o.o. je inženirski in proizvodni partner podjetja <strong>BTINOX d.o.o.</strong> – skupaj tvorimo skupino, ki pokriva celoten spekter ključavničarskih in kovinskih del, od prvega načrta do montaže na objektu.</p>
+                    <p>Izvajamo dela za zasebne naročnike, gradbena podjetja in industrijo: varjenje, rezanje, upogibanje in površinska obdelava nerjavečega jekla in jekla, vse po natančnih merah in z garancijo kakovosti.</p>
+                    <div class="about-features">
+                        <div class="feat"><i class='bx bx-check-circle'></i><span>Lastna kovinska delavnica v Litiji</span></div>
+                        <div class="feat"><i class='bx bx-check-circle'></i><span>Inox in jekleni izdelki po meri</span></div>
+                        <div class="feat"><i class='bx bx-check-circle'></i><span>Montaža na objektu po vsej Sloveniji</span></div>
+                        <div class="feat"><i class='bx bx-check-circle'></i><span>15+ let izkušenj v kovinarski stroki</span></div>
+                    </div>
+                    <a href="#kontakt" class="btn btn-primary">Pogovorimo se o projektu</a>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="about-photo-wrap">
+                        <img src="index/storitve_o_nas.jpg" alt="BT Inženiring v akciji" class="about-photo">
+                        <img src="index/o_nas_btinox.jpeg" alt="BT Inženiring ekipa" class="about-photo-secondary">
+                        <div class="about-photo-badge">
+                            <span class="apb-num">15+</span>
+                            <span class="apb-txt">let izkušenj</span>
+                        </div>
+                    </div>
+                    <div class="about-mini-cards">
+                        <div class="acard acard--top">
+                            <div class="acard__icon"><i class='bx bx-trophy'></i></div>
+                            <div><h4>Kakovost</h4><p>Najvišji standardi pri vsakem projektu.</p></div>
+                        </div>
+                        <div class="acard acard--mid">
+                            <div class="acard__icon"><i class='bx bx-time-five'></i></div>
+                            <div><h4>Pravočasno</h4><p>V roku in znotraj proračuna.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="certifikati">
+        <div class="container">
+            <div class="cert-label reveal">
+                <span class="cert-label__tag">Certifikati</span>
+                <p class="cert-label__text">
+                    Delujemo v sklopu
+                    <a href="https://btinox.si" target="_blank" rel="noopener" class="cert-label__link">BTINOX d.o.o.</a>
+                    — spodnji certifikati so certifikati partnerskega podjetja BTINOX.
+                </p>
+                <a href="https://btinox.si" target="_blank" rel="noopener" class="cert-label__btn">
+                    <i class='bx bx-link-external'></i> Obišči btinox.si
+                </a>
+            </div>
+            <div class="cert-row">
+                <div class="cert-item reveal">
+                    <img src="index/cert1.png" alt="Certifikat za varjenje SIST EN 1090-2">
+                    <span class="cert-name">Certifikat za varjenje<small>SIST EN 1090-2:2018 · EXC 2</small></span>
+                </div>
+                <div class="cert-item reveal">
+                    <img src="index/cert2.png" alt="Inspection of welding process EN ISO 3834-2">
+                    <span class="cert-name">Varjenje — nadzor procesa<small>EN ISO 3834-2:2021</small></span>
+                </div>
+                <div class="cert-item reveal">
+                    <img src="index/cert3.png" alt="ISO 9001:2015">
+                    <span class="cert-name">ISO 9001:2015<small>Sistem vodenja kakovosti</small></span>
+                </div>
+                <div class="cert-item reveal">
+                    <img src="index/cert4.png" alt="ISO 14001:2015">
+                    <span class="cert-name">ISO 14001:2015<small>Sistem ravnanja z okoljem</small></span>
+                </div>
+                <div class="cert-item reveal">
+                    <img src="index/cert5.png" alt="ISO 45001:2018">
+                    <span class="cert-name">ISO 45001:2018<small>Varnost in zdravje pri delu</small></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="industrije" id="industrije">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Področja delovanja</span>
+                <h2>Kje delamo</h2>
+                <p>Naši izdelki krasijo stanovanjske hiše, poslovne objekte, javne prostore in industrijske hale – povsod, kjer je kakovost kovin pomembna.</p>
+            </div>
+            <div class="ind-grid">
+                <div class="ind-card reveal">
+                    <div class="ind-card__bg" style="background-image: url('index/farmacija.jpg')"></div>
+                    <div class="ind-card__body">
+                        <div class="ind-card__num">01</div>
+                        <h3>Stanovanjska gradnja</h3>
+                        <p>Balkonske in stopniščne ograje, notranje in zunanje stopnice, drsna vrata ter kovane okrasne elemente za hiše in stanovanja.</p>
+                        <a href="#kontakt" class="ind-link">Povpraševanje <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="ind-card reveal">
+                    <div class="ind-card__bg" style="background-image: url('index/biofarmacija.jpg')"></div>
+                    <div class="ind-card__body">
+                        <div class="ind-card__num">02</div>
+                        <h3>Industrijski objekti</h3>
+                        <p>Jeklene požarne stopnice, industrijska drsna vrata, delovne ploščadi, ograjni sistemi in specialne kovinske konstrukcije za tovarne in skladišča.</p>
+                        <a href="#kontakt" class="ind-link">Povpraševanje <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="ind-card reveal">
+                    <div class="ind-card__bg" style="background-image: url('index/prehrambena_industrija.jpg')"></div>
+                    <div class="ind-card__body">
+                        <div class="ind-card__num">03</div>
+                        <h3>Poslovni in javni prostori</h3>
+                        <p>Reprezentativne ograje, stopnišča, nadstreški in vhodne rešitve za poslovne stavbe, hotele, šole in javno infrastrukturo.</p>
+                        <a href="#kontakt" class="ind-link">Povpraševanje <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Extra services callout -->
+            <div class="ind-extra reveal">
+                <div class="ind-extra__text">
+                    <i class='bx bx-plus-circle'></i>
+                    <span>Izvajamo tudi: varnostne rešetke, kovane okraske, poštne nabiralnike, kovinsko pohištvo, popravila in servis obstoječih kovinskih elementov.</span>
+                </div>
+                <a href="#kontakt" class="btn btn-primary">Pošljite povpraševanje</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="proces" style="background-image: url('index/gospodarske_panoge.png')">
+        <div class="container">
+            <div class="section-head section-head--light reveal">
+                <span class="section-tag section-tag--light">Kako delamo</span>
+                <h2 class="light">Naš delovni proces</h2>
+                <p class="light">Preprost in pregleden postopek od prvega klica do montaže na vašem objektu.</p>
+            </div>
+            <div class="steps reveal">
+                <div class="step">
+                    <div class="step__num">01</div>
+                    <h3>Povpraševanje in izmere</h3>
+                    <p>Stopimo v stik, obiščemo lokacijo in skupaj z vami določimo mere, material in obliko.</p>
+                </div>
+                <div class="step-arrow"><i class='bx bx-right-arrow-alt'></i></div>
+                <div class="step">
+                    <div class="step__num">02</div>
+                    <h3>Načrtovanje in ponudba</h3>
+                    <p>Pripravimo tehnični načrt in cenovno ponudbo prilagojeno vašim željam in proračunu.</p>
+                </div>
+                <div class="step-arrow"><i class='bx bx-right-arrow-alt'></i></div>
+                <div class="step">
+                    <div class="step__num">03</div>
+                    <h3>Proizvodnja v delavnici</h3>
+                    <p>Vaš naročilo natančno izdelamo v lastni kovinarski delavnici z modernimi stroji.</p>
+                </div>
+                <div class="step-arrow"><i class='bx bx-right-arrow-alt'></i></div>
+                <div class="step">
+                    <div class="step__num">04</div>
+                    <h3>Dostava in montaža</h3>
+                    <p>Dostavimo in profesionalno montiramo na objektu – predaja z garancijo in brez skrbi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partnerji">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Reference</span>
+                <h2>Zaupajo nam</h2>
+                <p>Med našimi naročniki so gradbena podjetja, industrijska podjetja in zasebni investitorji. Delujemo v sklopu <strong>BTINOX</strong> – preverjenega slovenskega dobavitelja nerjavnih jeklenih produktov.</p>
+            </div>
+        </div>
+        <div class="logo-strip">
+            <div class="logo-track">
+                <div class="logo-item"><img src="logo/KRKA.jpg" alt="KRKA"></div>
+                <div class="logo-item"><img src="logo/GSK.jpg" alt="GSK"></div>
+                <div class="logo-item"><img src="logo/Novo_Nordisk.png" alt="Novo Nordisk"></div>
+                <div class="logo-item"><img src="logo/lek.png" alt="Lek"></div>
+                <div class="logo-item"><img src="logo/novartis.jpg" alt="Novartis"></div>
+                <div class="logo-item"><img src="logo/Pfizer.png" alt="Pfizer"></div>
+                <div class="logo-item"><img src="logo/Takeda.png" alt="Takeda"></div>
+                <div class="logo-item"><img src="logo/lonza.jpg" alt="Lonza"></div>
+                <div class="logo-item"><img src="logo/Dana.png" alt="Dana"></div>
+                <div class="logo-item"><img src="logo/Lactalis.png" alt="Lactalis"></div>
+                <!-- duplicates for seamless loop -->
+                <div class="logo-item"><img src="logo/KRKA.jpg" alt="KRKA"></div>
+                <div class="logo-item"><img src="logo/GSK.jpg" alt="GSK"></div>
+                <div class="logo-item"><img src="logo/Novo_Nordisk.png" alt="Novo Nordisk"></div>
+                <div class="logo-item"><img src="logo/lek.png" alt="Lek"></div>
+                <div class="logo-item"><img src="logo/novartis.jpg" alt="Novartis"></div>
+                <div class="logo-item"><img src="logo/Pfizer.png" alt="Pfizer"></div>
+                <div class="logo-item"><img src="logo/Takeda.png" alt="Takeda"></div>
+                <div class="logo-item"><img src="logo/lonza.jpg" alt="Lonza"></div>
+                <div class="logo-item"><img src="logo/Dana.png" alt="Dana"></div>
+                <div class="logo-item"><img src="logo/Lactalis.png" alt="Lactalis"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="kontakt" id="kontakt">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-tag section-tag--light">Kontakt</span>
+                    <h2 class="light">Povežimo se</h2>
+                    <p class="contact-desc">Imate projekt ali vprašanje? Naša ekipa je na voljo za pogovor. Skupaj bomo našli pravo rešitev za vaše potrebe.</p>
+                    <div class="contact-items">
+                        <div class="c-item">
+                            <div class="c-item__icon"><i class='bx bx-map'></i></div>
+                            <div>
+                                <strong>Sedež podjetja</strong>
+                                <p>Kidričeva cesta 6, 1270 Litija</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-item__icon"><i class='bx bxs-factory'></i></div>
+                            <div>
+                                <strong>Proizvodna hala</strong>
+                                <p>Šmartinska cesta 32, 1000 Ljubljana</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-item__icon"><i class='bx bx-phone'></i></div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <a href="tel:+38630391432">+386 30 391 432</a>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-item__icon"><i class='bx bx-envelope'></i></div>
+                            <div>
+                                <strong>E-pošta</strong>
+                                <a href="mailto:info@btinox.si">info@btinox.si</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <form action="https://formsubmit.co/info@btinox.si" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Ime in priimek *</label>
+                                <input type="text" name="name" required placeholder="Janez Novak">
+                            </div>
+                            <div class="form-group">
+                                <label>Podjetje</label>
+                                <input type="text" name="company" placeholder="Podjetje d.o.o.">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>E-pošta *</label>
+                                <input type="email" name="email" required placeholder="janez@podjetje.si">
+                            </div>
+                            <div class="form-group">
+                                <label>Telefon</label>
+                                <input type="tel" name="phone" placeholder="+386 XX XXX XXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Vrsta storitve</label>
+                            <select name="service">
+                                <option value="" disabled selected>Izberite storitev</option>
+                                <option>Ograje</option>
+                                <option>Stopnice</option>
+                                <option>Požarne stopnice</option>
+                                <option>Drsna vrata</option>
+                                <option>Jeklene konstrukcije</option>
+                                <option>Ključavničarska dela</option>
+                                <option>Drugo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Sporočilo *</label>
+                            <textarea name="message" rows="5" required placeholder="Opišite vaš projekt ali vprašanje..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class='bx bx-send'></i> Pošlji sporočilo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <img src="index/bts_logo.png" alt="BT Inženiring">
+                </div>
+                <p>Kakovostna ključavničarska in kovinska dela po meri. Del <strong>skupine BTINOX</strong>.</p>
+                <a href="https://www.linkedin.com/company/btinox" target="_blank" class="footer__linkedin">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+            </div>
+            <div class="footer__col">
+                <h4>Storitve</h4>
+                <ul>
+                    <li><a href="ograje.html">Ograje</a></li>
+                    <li><a href="stopnice.html">Stopnice</a></li>
+                    <li><a href="pozarne-stopnice.html">Požarne stopnice</a></li>
+                    <li><a href="drsna-vrata.html">Drsna vrata</a></li>
+                    <li><a href="konstrukcije.html">Jeklene konstrukcije</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Podjetje</h4>
+                <ul>
+                    <li><a href="o-nas.html">O nas</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="index.html">BTINOX d.o.o.</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Kontakt</h4>
+                <p>Kidričeva cesta 6<br>1270 Litija, Slovenija</p>
+                <a href="tel:+38630391432">+386 30 391 432</a>
+                <a href="mailto:info@btinox.si">info@btinox.si</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2025 BT Inženiring d.o.o. Vse pravice pridržane. | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
+
+

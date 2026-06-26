@@ -57,8 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
     mobOverlay.addEventListener('click', closeMenu);
   }
 
-  var mobClose = document.getElementById('mobClose');
-  if (mobClose) mobClose.addEventListener('click', closeMenu);
 
   mobLinks.forEach(function (l) {
     l.addEventListener('click', closeMenu);

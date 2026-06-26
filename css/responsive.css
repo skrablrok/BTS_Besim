@@ -61,6 +61,26 @@
   .about-mini-cards      { grid-template-columns: 1fr; }
   .cert-row              { gap: 1.25rem; }
   .cert-item img         { max-height: 90px; }
+
+  /* Certificate label — stack vertically */
+  .cert-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: .75rem 1rem;
+  }
+
+  /* Kaj delamo callout — stack text + button vertically */
+  .ind-extra {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .ind-extra .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -85,7 +105,8 @@
 }
 
 @media (max-width: 500px) {
-  .hero__btns  { flex-direction: column; align-items: flex-start; }
+  .hero__btns  { flex-direction: column; align-items: stretch; }
+  .hero__btns .btn { justify-content: center; }
   .stats__inner { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .footer__top { grid-template-columns: 1fr; }

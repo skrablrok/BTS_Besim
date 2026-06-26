@@ -24,6 +24,7 @@
 /* ≤960px: hide 3D canvas, text goes full width */
 @media (max-width: 960px) {
   .hero__3d { display: none; }
+  .hero__content { flex: 1; }
   .hero__container {
     padding-left:  clamp(1.5rem, 6vw, 60px);
     padding-right: clamp(1.5rem, 6vw, 60px);

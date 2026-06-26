@@ -61,6 +61,16 @@ document.addEventListener('DOMContentLoaded', function () {
     l.addEventListener('click', closeMenu);
   });
 
+  /* Mobile Storitve accordion */
+  document.querySelectorAll('.mob-dropdown-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var isOpen = this.classList.contains('open');
+      this.classList.toggle('open', !isOpen);
+      var sub = this.nextElementSibling;
+      if (sub) sub.classList.toggle('open', !isOpen);
+    });
+  });
+
   /* ================================================================
      SMOOTH ANCHOR SCROLL (closes menu on nav links)
   ================================================================ */

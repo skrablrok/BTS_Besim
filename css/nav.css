@@ -106,8 +106,22 @@
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Keep X above the mobile panel */
-.hamburger.active { position: relative; z-index: 2001; }
+/* Close button inside the mobile panel */
+.mob-close {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.4rem;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.8);
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: .2rem .4rem;
+  transition: color .2s;
+  z-index: 1;
+}
+.mob-close:hover { color: #fff; }
 
 /* ---------- Mobile Menu ---------- */
 .mobile-menu {
